@@ -94,8 +94,8 @@ references:
     cocoapods_cache_key: &cocoapods_cache_key v13-cocoapods-{{ arch }}-{{ .Environment.CIRCLE_JOB }}-{{ checksum "packages/rn-tester/Podfile.lock" }}-{{ checksum "packages/rn-tester/Podfile" }}-{{ checksum "/tmp/hermes/hermesversion" }}
     rntester_podfile_lock_cache_key: &rntester_podfile_lock_cache_key v12-podfilelock-{{ arch }}-{{ .Environment.CIRCLE_JOB }}-{{ checksum "packages/rn-tester/Podfile" }}-{{ checksum "/tmp/week_year" }}-{{ checksum "/tmp/hermes/hermesversion" }}
     # Cocoapods - HelloWorld
-    helloworld_cocoapods_cache_key: &helloworld_cocoapods_cache_key v3-cocoapods-{{ arch }}-{{ .Environment.CIRCLE_JOB }}-{{ checksum "packages/helloworld/ios/Podfile.lock" }}-{{ checksum "packages/helloworld/ios/Podfile" }}-{{ checksum "/tmp/hermes/hermesversion" }}
-    helloworld_podfile_lock_cache_key: &helloworld_podfile_lock_cache_key v3-podfilelock-{{ arch }}-{{ .Environment.CIRCLE_JOB }}-{{ checksum "packages/helloworld/ios/Podfile" }}-{{ checksum "/tmp/week_year" }}-{{ checksum "/tmp/hermes/hermesversion" }}
+    helloworld_cocoapods_cache_key: &helloworld_cocoapods_cache_key v4-cocoapods-{{ arch }}-{{ .Environment.CIRCLE_JOB }}-{{ checksum "packages/helloworld/ios/Podfile.lock" }}-{{ checksum "packages/helloworld/ios/Podfile" }}-{{ checksum "/tmp/hermes/hermesversion" }}
+    helloworld_podfile_lock_cache_key: &helloworld_podfile_lock_cache_key v4-podfilelock-{{ arch }}-{{ .Environment.CIRCLE_JOB }}-{{ checksum "packages/helloworld/ios/Podfile" }}-{{ checksum "/tmp/week_year" }}-{{ checksum "/tmp/hermes/hermesversion" }}
 
   cache_paths:
     hermes_workspace_macos_cache_paths: &hermes_workspace_macos_cache_paths
