@@ -1185,4 +1185,9 @@ public abstract class DevSupportManagerBase implements DevSupportManager {
   public void hidePausedInDebuggerOverlay() {
     mPausedInDebuggerOverlayManager.hidePausedInDebuggerOverlay();
   }
+
+  @Override
+  public void setAdditionalOptionForPackager(String name, String value) {
+    mDevSettings.getPackagerConnectionSettings().setAdditionalOptionForPackager(name, value);
+  }
 }
